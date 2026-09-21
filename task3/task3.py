@@ -3,7 +3,7 @@ from json import load, dump
 from collections import deque
 
 def combineTestsValues(tests, values):
-    queue = deque([test for test in tests])
+    queue = deque(tests)
     while len(queue) > 0:
         head = queue.popleft()
         if 'value' in head:

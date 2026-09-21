@@ -28,7 +28,7 @@ def isPointInEllipse(center: Tuple[int, int], radius: Tuple[int, int], point: Tu
 
 def main():
     if len(argv) < 3:
-        print(f"{argv[0]}: требуются 2 строчных аргумента")
+        print(f"{argv[0]}: <circle.txt> <dot.txt>")
     pathEllipseCenter, pathPoints = argv[1:2+1]
 
     center, radius = readEllipseCenter(pathEllipseCenter)

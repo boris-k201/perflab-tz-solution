@@ -10,7 +10,7 @@ def circularArrayTraverse(n: int, m: int):
 
 def main():
     if len(argv) < 5:
-        print(f"{argv[0]}: требуются 4 целочисленных аргумента")
+        print(f"{argv[0]}: <n1> <m1> <n2> <m2>")
     n1, m1, n2, m2 = list(map(int, argv[1:4+1]))
     solution1 = circularArrayTraverse(n1, m1)
     solution2 = circularArrayTraverse(n2, m2)
