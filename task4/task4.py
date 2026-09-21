@@ -9,6 +9,7 @@ def readNumbers(path):
 def main():
     if len(argv) < 2:
         print(f"{argv[0]}: <numbers.txt>")
+        return
     pathNumbers = argv[1]
 
     numbers = readNumbers(pathNumbers)

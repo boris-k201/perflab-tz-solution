@@ -29,6 +29,7 @@ def readValues(path):
 def main():
     if len(argv) < 4:
         print(f"{argv[0]}: <values.json> <tests.json> <report.json>")
+        return
     pathValues, pathTests, pathReport = argv[1:3+1]
 
     tests  = readTests(pathTests)
