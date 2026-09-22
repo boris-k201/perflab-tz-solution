@@ -9,10 +9,11 @@ def circularArrayTraverse(n: int, m: int):
     return result
 
 def main():
-    if len(argv) < 5:
-        print(f"{argv[0]}: <n1> <m1> <n2> <m2>")
+    if len(argv) < 3:
+        print(f'{argv[0]}: "<n1> <m1>" "<n2> <m2>"')
         return
-    n1, m1, n2, m2 = list(map(int, argv[1:4+1]))
+    n1, m1 = list(map(int, argv[1].strip().split())) 
+    n2, m2 = list(map(int, argv[2].strip().split()))
     solution1 = circularArrayTraverse(n1, m1)
     solution2 = circularArrayTraverse(n2, m2)
     print(*solution1, *solution2, sep='')
